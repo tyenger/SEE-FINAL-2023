@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'RussoOne';
+    font-style: normal;
+    font-display: swap;
+    src: local('RussoOne'), url('/fonts/RussoOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Aquire';
+    font-style: normal;
+    font-display: swap;
+    src: local('Aquire'), url('/fonts/Aquire.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'TekoBold';
+    font-style: normal;
+    font-display: swap;
+    src: local('TekoBold'), url('/fonts/Teko-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TekoLight';
+    font-style: normal;
+    font-display: swap;
+    src: local('TekoLight'), url('/fonts/Teko-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TekoMedium';
+    font-style: normal;
+    font-display: swap;
+    src: local('TekoMedium'), url('/fonts/Teko-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TekoRegular';
+    font-style: normal;
+    font-display: swap;
+    src: local('TekoRegular'), url('/fonts/Teko-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TekoSemiBold';
+    font-style: normal;
+    font-display: swap;
+    src: local('TekoSemiBold'), url('/fonts/Teko-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsBlack';
+    font-style: normal;
+    font-display: swap;
+    src: local('PoppinsBlack'), url('/fonts/Poppins-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsBold';
+    font-style: normal;
+    font-display: swap;
+    src: local('PoppinsBold'), url('/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsExtraBold';
+    font-style: normal;
+    font-display: swap;
+    src: local('PoppinsExtraBold'), url('/fonts/Poppins-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsLight';
+    font-style: normal;
+    font-display: swap;
+    src: local('PoppinsLight'), url('/fonts/Poppins-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsMedium';
+    font-style: normal;
+    font-display: swap;
+    src: local('PoppinsMedium'), url('/fonts/Poppins-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsRegular';
+    font-style: normal;
+    font-display: swap;
+    src: local('PoppinsRegular'), url('/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsSemiBold';
+    font-style: normal;
+    font-display: swap;
+    src: local('PoppinsSemiBold'), url('/fonts/Poppins-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PoppinsThin';
+    font-style: normal;
+    font-display: swap;
+    src: local('PoppinsThin'), url('/fonts/Poppins-Thin.ttf') format('truetype');
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}

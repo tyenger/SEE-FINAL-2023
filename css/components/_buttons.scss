@@ -1,0 +1,124 @@
+/* Buttons */
+
+.solid {
+    border: none;
+    padding: 10px 25px;
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        border-top: 2px solid #000;
+        border-left: 2px solid #000;
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        transition: width .3s, height .3s;
+    }
+
+    &:after {
+        content: '';
+        width: 20px;
+        height: 20px;
+        border-bottom: 2px solid #000;
+        border-right: 2px solid #000;
+        position: absolute;
+        bottom: -5px;
+        right: -5px;
+        transition: width .3s, height .3s;
+    }
+
+    &:hover {
+        &:before,
+        &:after {
+            width: 120px;
+            height: 30px;
+        }
+    }
+
+
+    &.form-button {
+        &:before,
+        &:after {
+            border-color: $primary;
+        }
+    }
+}
+
+
+.primary {
+    background: $primary;
+    color: #E7E7E7;
+    font-size: var(--button-reg);
+    border: none;
+    width: 150px;
+    height: auto;
+    padding: 10px 25px;
+    cursor: pointer;
+    position: relative;
+    transition: .2s ease;
+}
+
+.primary:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid $primary;
+    border-left: 2px solid $primary;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+}
+
+.primary:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid $primary;
+    border-right: 2px solid $primary;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    -webkit-transition: .2s ease;
+    -o-transition: .2s ease;
+    transition: .2s ease;
+}
+
+.primary:hover:before,
+.primary:hover:after {
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.active-menu {
+    color: $primary !important;
+}
+
+.active-menu-main {
+    position: relative;
+}
+
+.active-menu-main:before {
+    content: '';
+    right: -15px;
+    top: -1px;
+    width: 5px;
+    height: 25px;
+    background: $primary;
+    position: absolute;
+}
+
+i.active-menu {
+    border-right: 5px solid $primary;
+    color: $primary !important;
+}
+
+.active-sub-menu {
+    color: $primary !important;
+}

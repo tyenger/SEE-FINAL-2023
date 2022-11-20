@@ -1,0 +1,706 @@
+/*-- -------------------------- -->
+<---          LANDING           -->
+<--- -------------------------- -*/
+
+.landing-page {
+    min-height: 750px;
+    position: relative;
+    background-color: #000;
+}
+
+.landing-bg {
+    max-height: 750px;
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+}
+
+.container.landing-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.landing-text {
+    position: relative;
+    padding-top: 180px;
+    width: 70%;
+
+    h1 {
+        color: $white;
+        font-weight: 900;
+        line-height: 1.2em;
+        margin: 0;
+    }
+
+    h2 {
+        color: $white;
+        font-size: 32px;
+        letter-spacing: 1.2px;
+        font-family: $font-sub;
+        margin: 20px 0;
+    }
+
+}
+
+.landing-btn-wrap {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 50px;
+    margin-bottom: 50px;
+
+
+    button {
+        min-width: max-content;
+    }
+}
+
+
+.clippy-desktop {
+    height: 90px;
+    width: 100%;
+    background: #fff;
+    -webkit-clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 20%, 50% 100%);
+    clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 20%, 50% 100%);
+    position: absolute;
+    bottom: -2px;
+}
+
+
+/*-- -------------------------- -->
+<---          SERVICES          -->
+<--- -------------------------- -*/
+
+.services {
+    position: relative;
+    height: 450px;
+}
+
+.card-container {
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+    top: -100px;
+
+}
+
+.card {
+    align-items: center;
+    background: $light-gray;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    justify-content: center;
+    max-width: 250px;
+    margin: 40px auto;
+    position: relative;
+    width: 270px;
+    margin: 0;
+    height: 500px;
+
+    h3 {
+        font: 30px/30px $font-heading;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+    }
+
+    p {
+        font: 17px/30px $font-para;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    svg {
+        width: 70px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+
+    button {
+        border: transparent;
+        background: transparent;
+        font-size: 14px;
+        color: var(--heading);
+        margin: 0 auto;
+        position: relative;
+        padding-left: 0;
+        text-transform: uppercase;
+        font-weight: 900;
+        height: 20px;
+        margin-bottom: 20px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            width: 86px;
+            height: 2px;
+            background: $primary;
+        }
+    }
+}
+
+
+
+.card-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-top: 10px solid $primary;
+    position: absolute;
+    max-width: 85%;
+    top: -10px;
+
+    button {
+        position: relative;
+        left: 15px;
+        margin-bottom: 60px;
+
+
+        i.fas.fa-chevron-right {
+            padding: 0 10px;
+            font-size: 10px !important;
+            position: relative;
+            right: -5px;
+            animation: infinite-spinning 1s infinite ease-in-out;
+        }
+
+        &:before {
+            width: 93px;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    p {
+        height: 150px;
+    }
+
+}
+
+.clippy {
+    height: 90px;
+    background: #fff;
+    -webkit-clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 20%, 50% 100%);
+    clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 20%, 50% 100%);
+    position: relative;
+    bottom: 190px;
+}
+
+@-webkit-keyframes infinite-spinning {
+    0% {
+        right: -5px;
+    }
+
+    50% {
+        right: -10px;
+    }
+
+    100% {
+        right: -5px;
+    }
+}
+
+@keyframes infinite-spinning {
+    0% {
+        right: -5px;
+    }
+
+    50% {
+        right: -10px;
+    }
+
+    100% {
+        right: -5px;
+    }
+}
+
+
+/*-- -------------------------- -->
+<---          OUR STORY         -->
+<--- -------------------------- -*/
+
+#about {
+    position: relative;
+    background-color: $light-gray;
+}
+
+.about-container {
+    padding-top: 80px;
+
+    h2 {
+        font-weight: 700;
+        padding-bottom: 15px;
+        font-size: 40px;
+        margin: 0 auto;
+        width: 100%;
+        text-align: right;
+        position: relative;
+        margin-left: -150px;
+
+        span {
+            display: inline-block;
+            color: $primary;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            background: $primary;
+            width: 50px;
+            height: 2px;
+            right: 250px;
+            top: 20px;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            background: $primary;
+            width: 30px;
+            height: 2px;
+            right: 250px;
+            top: 30px;
+        }
+    }
+}
+
+.about-content-button {
+    width: auto;
+    background: #000;
+    color: #f5f3f3;
+
+    &:before {
+        border-top: 2px solid #000;
+        border-left: 2px solid #000;
+    }
+
+    &:after {
+        border-bottom: 2px solid #000;
+        border-right: 2px solid #000;
+    }
+}
+
+
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: relative;
+    width: 100%;
+
+    img {
+        height: auto;
+        max-width: 100%;
+        width: 60%;
+        object-fit: cover;
+    }
+}
+
+.about-box {
+    background: rgba(4, 120, 236, 0.8);
+    position: relative;
+    max-width: 100%;
+    width: 35%;
+    float: right;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    padding: 0;
+
+    p {
+        padding: 30px 30px 0;
+        font-family: $font-para;
+        font-size: 20px;
+        color: #e7e7e7;
+        line-height: 25px;
+
+        span {
+            font-style: italic;
+            font-size: 16px;
+        }
+    }
+
+    span {
+        font-weight: normal;
+        font-family: $font-para;
+    }
+
+    button {
+        width: 180px;
+        height: 40px;
+        margin-left: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+.about {
+    display: block;
+    font-weight: 900;
+    background: #f5f3f3;
+    color: #000;
+
+    &:before,
+    &:after {
+        border-color: #fff;
+    }
+}
+
+.clippy-about {
+    height: 90px;
+    width: 100%;
+    background: #fff;
+    clip-path: polygon(0 20%, 0 100%, 100% 100%, 100% 20%, 50% 100%);
+    position: absolute;
+    bottom: 0;
+}
+
+
+/*-- -------------------------- -->
+<---          OUR MISSION       -->
+<--- -------------------------- -*/
+
+#mission {
+    margin: 120px 0 0;
+    position: relative;
+    width: 100%;
+
+
+    .clippy {
+        background-color: $light-gray;
+        bottom: 0;
+    }
+}
+
+.mission-topper {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    gap: 15px;
+    justify-content: space-between;
+    width: 100%;
+
+
+    img {
+        height: auto;
+        max-width: 100%;
+        object-fit: contain;
+        width: 100%;
+    }
+}
+
+
+.mission-heading {
+    max-width: 50%;
+    position: relative;
+
+    h2 {
+        font-weight: 700;
+        font-size: 40px;
+        margin-bottom: 30px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            background: $primary;
+            width: 50px;
+            height: 2px;
+            left: 100px;
+            top: 15px;
+        }
+
+        :after {
+            content: '';
+            position: absolute;
+            background: $primary;
+            width: 30px;
+            height: 2px;
+            left: 100px;
+            top: 25px;
+        }
+
+        span {
+            color: $primary;
+            display: block;
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+        font-family: $font-para;
+        font-size: 20px;
+        line-height: 35px;
+    }
+}
+
+/*-- -------------------------- -->
+<---          OUR PARTNERS      -->
+<--- -------------------------- -*/
+
+#partners {
+    background: #f5f3f3;
+    width: 100%;
+}
+
+.partners-topper {
+    margin: 0 auto;
+    width: 100%;
+
+    h2 {
+        font-weight: 700;
+        font-size: 40px;
+        margin-top: 0;
+        padding-top: 100px;
+        position: relative;
+        text-align: center;
+
+        &:before {
+            content: '';
+            position: absolute;
+            background: $primary;
+            width: 50px;
+            height: 2px;
+            right: 660px;
+            top: 115px;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            background: $primary;
+            width: 30px;
+            height: 2px;
+            right: 660px;
+            top: 125px;
+        }
+
+        span {
+            color: $primary;
+            display: block;
+        }
+    }
+
+    span {
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            background: $primary;
+            width: 50px;
+            height: 2px;
+            right: 490px;
+            top: 15px;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            background: $primary;
+            width: 30px;
+            height: 2px;
+            right: 510px;
+            top: 25px;
+        }
+    }
+}
+
+.partners-logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    padding-top: 50px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        width: 150px;
+        object-fit: contain;
+    }
+}
+
+/*-- -------------------------- -->
+<---          CONTACT           -->
+<--- -------------------------- -*/
+
+#contact {
+    background: $gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+}
+
+.contact-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0 100px;
+
+    h2 {
+        margin-bottom: 0;
+        font-size: 33px;
+        margin-top: 0;
+        font-size: 28px;
+        color: $black;
+    }
+
+    .form-button {
+        color: $white;
+        display: block;
+        background-color: $primary;
+        font-family: $font-heading;
+        width: max-content;
+        font-size: 16px;
+        margin: 0;
+        text-transform: uppercase;
+    }
+}
+
+.form {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 30px;
+    background: $white;
+    border-radius: 4px;
+}
+
+.form-control {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:not(:last-of-type) {
+        margin-bottom: 33px;
+    }
+
+    label  {
+        position: absolute;
+        left: 0px;
+        bottom: 10px;
+        color: $dark-gray;
+        font-family: $font-para;
+        font-size: 16px;
+        z-index: 1;
+        transition: all 0.1s ease-in;
+
+        span {
+            color: $red;
+        }
+    }
+}
+
+.form-input {
+    position: relative;
+    width: 90%;
+
+    input {
+        position: relative;
+        width: 100%;
+        padding: 8px 23px 8px 0px;
+        outline: 1px solid transparent;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #c2c2c2;
+        background: transparent !important;
+        z-index: 9;
+        color: #2c3638;
+    }
+
+    textarea {
+        position: relative;
+        width: 110%;
+        outline: 1px solid transparent;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #c2c2c2;
+        background: transparent !important;
+        z-index: 9;
+        color: #2c3638;
+        white-space: normal;
+        text-align: justify;
+        text-align-last: left;
+        resize: none;
+    }
+}
+
+input:focus + label,
+textarea:focus + label {
+    opacity: 1;
+    bottom: 100%;
+    z-index: 9;
+    transition: bottom 0.1s ease-in-out;
+}
+
+input:focus {
+    border-bottom: 1px solid $primary;
+}
+
+/* while input input is not empty */
+input:valid + label {
+    bottom: 100%;
+    z-index: 9;
+    transition: bottom 0.1s ease-in-out;
+}
+
+.form-submit {
+    position: relative;
+    width:100%;
+    margin: 14px 0px;
+
+    button {
+        width:100%;
+        padding: 8px;
+        background: $primary-light;
+        font-weight: 500;
+        font-size: 18px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid transparent;
+        text-transform: uppercase;
+        transition: all 0.2s ease;
+        letter-spacing: 0.5px;
+        color: #FFF;
+        cursor: pointer;
+
+        &:hover {
+            background: $primary;
+            transition: all 0.2s ease-out;
+        }
+    }
+}
+
+.grid-2 {
+    position: relative;
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
